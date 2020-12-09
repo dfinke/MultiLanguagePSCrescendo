@@ -1,0 +1,32 @@
+{
+    "$schema": "../Microsoft.PowerShell.Crescendo.Schema.json",
+    "Verb": "Get",
+    "Noun": "HelloRust",
+    "OriginalName": "$PSScriptRoot/hello.exe",
+    "Parameters": [
+        {
+            "Name":"Name",
+            "ParameterType": "string",
+            "Description": "Just a string"
+        },
+        {
+            "Name":"Age",
+            "ParameterType": "string",
+            "Description": "Just a number"
+        }
+    ],    
+    "OutputHandlers": [
+        {
+            "ParameterSetName": "Default",
+            "Handler": "
+            $h = [ordered]@{}
+            foreach($item in $input) {
+                $k,$v = $item -split '='
+                $h.($k.trim())=$v.trim()
+            }
+            [pscustomobject]$h
+            ",
+            "StreamOutput": true
+        }
+    ]
+}
