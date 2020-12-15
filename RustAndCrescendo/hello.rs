@@ -8,4 +8,5 @@ fn main() {
  
     println!("name = {}", name);
     println!("age = {}", age);
+    println!("language = Rust");
 }

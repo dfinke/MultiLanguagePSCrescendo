@@ -1,4 +1,5 @@
 Get-ChildItem -Directory | ForEach-Object {
+    Write-Progress -Activity "Building" -Status $_
     Push-Location
     Set-Location $_
     if (Test-Path .\build.ps1) {
@@ -7,6 +8,8 @@ Get-ChildItem -Directory | ForEach-Object {
     }  
     Pop-Location
 }
+
+Write-Progress -Activity "Running" 
 
 Get-HelloRust Jane 20
 Get-HelloGo John 21
