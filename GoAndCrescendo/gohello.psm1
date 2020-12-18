@@ -4,16 +4,16 @@ Function Get-HelloGo
 [CmdletBinding()]
 
 param(
-[Parameter()]
+[Parameter(Position=0)]
 [string]$Name,
-[Parameter()]
+[Parameter(Position=1)]
 [string]$Age
     )
 
 BEGIN {
     $__PARAMETERMAP = @{
-        Name = @{ OriginalName = ''; OriginalPosition = '0'; Position = '2147483647'; ParameterType = [string]; NoGap = $False }
-        Age = @{ OriginalName = ''; OriginalPosition = '0'; Position = '2147483647'; ParameterType = [string]; NoGap = $False }
+        Name = @{ OriginalName = ''; OriginalPosition = '0'; Position = '0'; ParameterType = [string]; NoGap = $False }
+        Age = @{ OriginalName = ''; OriginalPosition = '1'; Position = '1'; ParameterType = [string]; NoGap = $False }
     }
 
     $__outputHandlers = @{

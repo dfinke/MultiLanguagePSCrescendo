@@ -5,11 +5,15 @@
     "OriginalName": "$PSScriptRoot/hello.exe",
     "Parameters": [
         {
+            "OriginalPosition":0,
+            "Position":0,    
             "Name":"Name",
             "ParameterType": "string",
             "Description": "Just a string"
         },
         {
+            "OriginalPosition":1,
+            "Position":1,    
             "Name":"Age",
             "ParameterType": "string",
             "Description": "Just a number"

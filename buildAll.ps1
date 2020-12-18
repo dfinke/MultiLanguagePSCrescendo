@@ -12,5 +12,5 @@ Get-ChildItem -Directory | ForEach-Object {
 Write-Progress -Activity "Running" 
 
 Get-HelloRust Jane 20
-Get-HelloGo John 21
+Get-HelloGo -Age 21 -Name John 
 Get-HelloPython Mary 22
