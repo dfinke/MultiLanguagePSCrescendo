@@ -8,6 +8,9 @@ The exe files for the Go and Rust for the `hellworld` are provided. You'll need 
 
 In order for `buildAll.ps1` to work, you need to have Go and Rust installed. That scripts traverses each directory and runs the `build.ps1`. 
 
+The executables are in the repo already built. You can run `Export-CrescendoModule`in each subdirectory to create the `psm1` file.
+You'll need python installed for the Python PowerShell module to work.
+
 Here is what it looks like in the `GoCrescendo` directory.
 
 ```powershell
